@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let contocorrente =2000;
+    let operazione
+    while (operazione !=4) {
+    operazione =parseInt(prompt("buonasera,benvenuto in baca sella.\n\n premi 1 per fare bonifico\n\npremi 2 per fare prelievo"))
+   switch(operazione){
+    case 1 :
+        importo=parseInt(prompt("inserisci l'importo: "))
+    if(contocorrente-importo>=0){
+    contocorrente=contocorrente-importo    
+    } else{
+        alert("saldo insufficiente")
+    }
+     alert("il bonifico di:" +importo+ "è stato effetuato con successo")
+     break;
+     case 2:
+     importo = parseInt(prompt("inserisci l'importo desiderato:"))
+if (contocorrente -importo>=0){
+    contocorrente=contocorrente-importo
+}else{
+    alert("saldo insufficiente")
+}
+alert("il prelievo di:"+importo +"è stato effettuato con successo :") 
+break;
+default:
+    alert("scelta non valida.si prega di premere un altro tasto")
+    }
+}
+ alert("grazie ed arrivederci")
+ </script>    
+</body>
+</html>
